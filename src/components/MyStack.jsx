@@ -13,7 +13,7 @@ import ChakraLogo from './ChakraLogo';
 const MyStack = () => {
   return (
     <Stack mt={12}>
-      <Heading>Tecnologies I use in my day to day:</Heading>
+      <Heading>Tecnologias que manejo:</Heading>
       <Stack
         direction="row"
         divider={<StackDivider borderColor="gray.200" />}
@@ -23,7 +23,7 @@ const MyStack = () => {
       >
         <Stack>
           <Text fontWeight="bold">Front End</Text>
-          <Stack direction="row" pt={3}>
+          <Stack direction="row" pt={3} spacing={3}>
             <Stack>
               <Tooltip label="React">
                 <Image
@@ -53,7 +53,7 @@ const MyStack = () => {
 
         <Stack>
           <Text fontWeight="bold">Back End</Text>
-          <Stack direction="row" pt={3}>
+          <Stack direction="row" pt={3} spacing={3}>
             <Stack>
               <Tooltip label="PostgreSQL">
                 <Image src="images/postgresql.svg" w="60px" h="60px" />
@@ -74,10 +74,15 @@ const MyStack = () => {
         <Stack>
           <Text fontWeight="bold">Languages and Tools</Text>
           <Stack direction="row" pt={3}>
-            <Stack direction="row" mx="3rem">
+            <Stack direction="row" mx="3rem" spacing={3}>
               <Stack>
                 <Tooltip label="Javascript">
                   <Image src="images/js.svg" w="60px" h="60px" />
+                </Tooltip>
+              </Stack>
+              <Stack>
+                <Tooltip label="Typescript">
+                  <Image src="images/typescript.svg" w="60px" h="60px" />
                 </Tooltip>
               </Stack>
               <Stack>

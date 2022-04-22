@@ -1,38 +1,53 @@
-import {
-  Box,
-  Button,
-  HStack,
-  Image,
-  Stack,
-  Text,
-  VStack,
-} from '@chakra-ui/react';
-import React from 'react';
+import { Button, HStack, Image, Stack, Text, VStack } from '@chakra-ui/react';
+import React, { useEffect, useState } from 'react';
 import Tecnologies from './Tecnologies';
 
 const Project = ({ data }) => {
+  const [projectImage, setProjectImage] = useState(data.image);
+  const [isGif, setIsGif] = useState(false);
+
+  useEffect(() => {
+    if (isGif) {
+      setProjectImage(data.gif);
+    } else {
+      setProjectImage(data.image);
+    }
+  }, [data, isGif]);
+
+  const handleHover = () => {
+    setIsGif(!isGif);
+    //setProjectImage('yellow');
+  };
+
   return (
     <Stack
       w="400px"
-      h="450px"
+      h="430px"
       spacing={4}
       borderWidth={1}
       borderColor="gray.100"
       borderRadius="2xl"
       pb={3}
-      my={6}
+      my={1}
       mx={0}
       px={0}
       boxShadow="0 0 3px gray"
     >
-      <Image src={data.image} width="400px" height="250px" borderRadius="2xl" />
+      <Image
+        width="400px"
+        src={projectImage}
+        height="250px"
+        borderTopRadius="2xl"
+        onMouseEnter={handleHover}
+        onMouseLeave={handleHover}
+      />
       <VStack>
         <Text fontWeight="bold" fontSize="xl">
           {data.title}
         </Text>
         <Tecnologies data={data.tecnologies} />
       </VStack>
-      <HStack px={9} py="0.5rem" w="full">
+      <HStack px={9} py="0.5rem" w="full" align="center" pt={3}>
         <Button
           bg="black"
           color="white"

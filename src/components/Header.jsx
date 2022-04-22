@@ -13,10 +13,7 @@ const Header = () => {
     >
       <Text as="h1">Andres Hense</Text>
       <Stack direction="row" spacing={8} alignItems="center">
-        <Link>About Me</Link>
-        <Link>Projects</Link>
-        <Link>Contact Me</Link>
-        <Button as="a" href="CV-Hense.pdf" target="_blank" color="black">
+        <Button colorScheme="teal" as="a" href="CV-Hense.pdf" target="_blank">
           Download CV
         </Button>
       </Stack>

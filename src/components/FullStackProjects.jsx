@@ -6,6 +6,7 @@ const FullStackProjects = () => {
   const projects = [
     {
       image: 'images/majac.png',
+      gif: 'images/majac.png',
       github: 'https://github.com/frontendcafe/cmyk-grape',
       deploy: 'https://github.com/frontendcafe/cmyk-grape/blob/main',
       tecnologies: ['Bootstrap', 'Vainilla JS'],
@@ -13,6 +14,7 @@ const FullStackProjects = () => {
     },
     {
       image: 'images/extracker.png',
+      gif: 'images/extracker.png',
       github: 'https://github.com/frontendcafe/cmyk-grape',
       deploy: 'https://github.com/frontendcafe/cmyk-grape/blob/main',
       tecnologies: ['React', 'Content', 'MongoDB', 'NodeJs'],
@@ -20,6 +22,7 @@ const FullStackProjects = () => {
     },
     {
       image: 'images/itjobs.png',
+      gif: 'images/itjobs.png',
       github: 'https://github.com/frontendcafe/cmyk-grape',
       deploy: 'https://github.com/frontendcafe/cmyk-grape/blob/main',
       tecnologies: ['NodeJs', 'PostgreSQL'],
@@ -27,6 +30,7 @@ const FullStackProjects = () => {
     },
     {
       image: 'images/shop-mer.png',
+      gif: 'images/shop-mer.png',
       github: 'https://github.com/frontendcafe/cmyk-grape',
       deploy: 'https://github.com/frontendcafe/cmyk-grape/blob/main',
       tecnologies: ['React', 'Redux', 'Bootstrap', 'NodeJs', 'MongoDB'],
@@ -38,10 +42,9 @@ const FullStackProjects = () => {
       <Text
         fontWeight="bold"
         fontSize="5xl"
-        align="start"
+        align="center"
         justifyContent="center"
         justifyItems="center"
-        pl="5rem"
         pt="3rem"
         pb="1rem"
       >

@@ -18,10 +18,8 @@ function App() {
         <Hero />
         <MyStack />
         <FullStackProjects />
-        <FrontEndProjects />
         <AboutMe />
-        <ContactMe />
-        <Footer />
+        <FrontEndProjects />
       </Box>
     </ChakraProvider>
   );

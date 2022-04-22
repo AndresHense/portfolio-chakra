@@ -10,6 +10,7 @@ const badgeType = {
   PostgreSQL: 'red',
   'Vainilla JS': 'red',
   Content: 'red',
+  Typescript: 'cyan',
 };
 
 const Tecnologies = ({ data }) => {

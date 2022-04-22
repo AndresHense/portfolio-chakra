@@ -49,10 +49,10 @@ const AboutMe = () => {
       >
         <Text align="start" mb={-1} fontFamily="mono">
           Soy Andres, tengo 22 años y vivo en Buenos Aires, Argentina. Soy un
-          junior front-end developer.
+          junior FullStack developer con mucha mañia con el front.
         </Text>
         <Text align="start" fontFamily="mono" mb={-1}>
-          Me encanta agarrar diseños UIs y implementarlos en paginas Webs
+          Disfruto agarrar diseños UIs y convertirlos en paginas Webs
           funcionales.
         </Text>
         <Text align="start" fontFamily="mono">

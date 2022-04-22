@@ -1,4 +1,4 @@
-import { Stack, Text } from '@chakra-ui/react';
+import { Stack, Text, Wrap, WrapItem } from '@chakra-ui/react';
 import React from 'react';
 import Project from './Project';
 
@@ -41,7 +41,7 @@ const FullStackProjects = () => {
     <Stack pt={8}>
       <Text
         fontWeight="bold"
-        fontSize="5xl"
+        fontSize={{ base: '2xl', md: '3xl', lg: '5xl' }}
         align="center"
         justifyContent="center"
         justifyItems="center"
@@ -50,18 +50,19 @@ const FullStackProjects = () => {
       >
         FullStack Projects:
       </Text>
-      <Stack
-        direction="row"
-        justifyContent="center"
-        justifyItems="center"
+      <Wrap
         align="center"
-        spacing={6}
+        justify="center"
+        spacing={8}
+        w="95%"
+        alignSelf="center"
       >
-        <Project data={projects[0]} />
-        <Project data={projects[1]} />
-        <Project data={projects[2]} />
-        <Project data={projects[3]} />
-      </Stack>
+        {projects.map(project => (
+          <WrapItem key={project.title}>
+            <Project data={project} key={project.title} />
+          </WrapItem>
+        ))}
+      </Wrap>
     </Stack>
   );
 };

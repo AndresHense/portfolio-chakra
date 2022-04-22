@@ -1,4 +1,4 @@
-import { Button, Divider, Link, Stack, Text } from '@chakra-ui/react';
+import { Button, Stack, Text } from '@chakra-ui/react';
 import React from 'react';
 
 const Header = () => {

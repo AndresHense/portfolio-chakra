@@ -51,7 +51,13 @@ const FrontEndProjects = () => {
   useEffect(() => {}, [numProjects]);
   return (
     <Stack mb="8rem">
-      <Text fontWeight="bold" fontSize="5xl" align="center" pt="3rem" pb="1rem">
+      <Text
+        fontWeight="bold"
+        fontSize={{ base: '2xl', md: '3xl', lg: '5xl' }}
+        align="center"
+        pt={{ base: '1rem', md: '2rem', lg: '3rem' }}
+        pb="1rem"
+      >
         FrontEnd Projects:
       </Text>
       <Wrap

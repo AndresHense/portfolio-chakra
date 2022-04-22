@@ -1,19 +1,22 @@
-import {
-  HStack,
-  Icon,
-  IconButton,
-  Stack,
-  Text,
-  VStack,
-} from '@chakra-ui/react';
+import { HStack, IconButton, Stack, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
-import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const AboutMe = () => {
   return (
-    <Stack direction="row" p="2rem" h="360px" align="center" my={16}>
-      <VStack w="50%">
-        <Text as="h1" fontSize="6xl" fontWeight="bold" align="center">
+    <Stack
+      direction={{ base: 'column', md: 'column', lg: 'row' }}
+      p="2rem"
+      align="center"
+      my={{ base: 4, md: 10, lg: 16 }}
+    >
+      <VStack w={{ base: '100%', md: '100%', lg: '50%' }}>
+        <Text
+          as="h1"
+          fontSize={{ base: '2xl', md: '4xl', lg: '6xl' }}
+          fontWeight="bold"
+          align="center"
+        >
           Sobre mi
         </Text>
         <HStack>
@@ -39,7 +42,11 @@ const AboutMe = () => {
         </Text>
       </VStack>
 
-      <VStack w="35%" justify="center" pt={6}>
+      <VStack
+        w={{ base: '100%', md: '100%', lg: '35%' }}
+        justify="center"
+        pt={6}
+      >
         <Text align="start" mb={-1} fontFamily="mono">
           Soy Andres, tengo 22 años y vivo en Buenos Aires, Argentina. Soy un
           junior front-end developer.

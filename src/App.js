@@ -4,8 +4,6 @@ import Header from './components/Header';
 import AboutMe from './components/AboutMe';
 import FullStackProjects from './components/FullStackProjects';
 import FrontEndProjects from './components/FrontEndProjects';
-import ContactMe from './components/ContactMe';
-import Footer from './components/Footer';
 import Hero from './components/Hero';
 import MyStack from './components/MyStack';
 

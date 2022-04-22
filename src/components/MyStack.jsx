@@ -1,21 +1,42 @@
-import {
-  Heading,
-  Icon,
-  Image,
-  Stack,
-  StackDivider,
-  Text,
-  Tooltip,
-} from '@chakra-ui/react';
+import { Heading, Stack, StackDivider, Text } from '@chakra-ui/react';
 import React from 'react';
-import ChakraLogo from './ChakraLogo';
+import Tech from './Tech';
+
+const frontTech = [
+  {
+    label: 'React',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg',
+  },
+  { label: 'Redux', image: 'images/redux.svg' },
+  {
+    label: 'Chakra UI',
+    image: 'images/chakra-ui.svg',
+  },
+  { label: 'Bootsrap 5', image: 'images/bootstrap-5-1.svg' },
+];
+
+const backTech = [
+  { label: 'PostgreSQL', image: 'images/postgresql.svg' },
+  { label: 'MongoDB', image: 'images/mongodb-icon-1.svg' },
+  { label: 'NodeJs', image: 'images/nodejs-icon.svg' },
+];
+
+const randTech = [
+  { label: 'Javascript', image: 'images/js.svg' },
+  { label: 'Typescript', image: 'images/typescript.svg' },
+  { label: 'C/C++', image: 'images/c.svg' },
+  { label: 'Git', image: 'images/git-icon.svg' },
+  { label: 'GitHub', image: 'images/github-icon-1.svg' },
+];
 
 const MyStack = () => {
   return (
-    <Stack mt={12}>
-      <Heading>Tecnologias que manejo:</Heading>
+    <Stack mt={{ base: 4, lg: 12 }}>
+      <Heading fontSize={{ base: 'xl', md: '2xl', lg: '4xl' }}>
+        Tecnologias que manejo:
+      </Heading>
       <Stack
-        direction="row"
+        direction={{ base: 'column', md: 'column', lg: 'row' }}
         divider={<StackDivider borderColor="gray.200" />}
         justify="center"
         pt={14}
@@ -23,85 +44,40 @@ const MyStack = () => {
       >
         <Stack>
           <Text fontWeight="bold">Front End</Text>
-          <Stack direction="row" pt={3} spacing={3}>
-            <Stack>
-              <Tooltip label="React">
-                <Image
-                  src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                  w="60px"
-                  h="60px"
-                />
-              </Tooltip>
-            </Stack>
-            <Stack>
-              <Tooltip label="redux">
-                <Image src="images/redux.svg" w="60px" h="60px" />
-              </Tooltip>
-            </Stack>
-            <Stack>
-              <Tooltip label="Bootstrap 5">
-                <Image src="images/bootstrap-5-1.svg" w="60px" h="60px" />
-              </Tooltip>
-            </Stack>
-            <Stack>
-              <Tooltip label="Chakra UI">
-                <Image src="images/chakra-ui.svg" w="60px" h="60px" />
-              </Tooltip>
-            </Stack>
+          <Stack
+            direction="row"
+            pt={3}
+            spacing={3}
+            align="center"
+            justify="center"
+          >
+            {frontTech.map(tech => (
+              <Tech image={tech.image} label={tech.label} />
+            ))}
           </Stack>
         </Stack>
 
         <Stack>
           <Text fontWeight="bold">Back End</Text>
-          <Stack direction="row" pt={3} spacing={3}>
-            <Stack>
-              <Tooltip label="PostgreSQL">
-                <Image src="images/postgresql.svg" w="60px" h="60px" />
-              </Tooltip>
-            </Stack>
-            <Stack>
-              <Tooltip label="MongoDB">
-                <Image src="images/mongodb-icon-1.svg" w="60px" h="60px" />
-              </Tooltip>
-            </Stack>
-            <Stack>
-              <Tooltip label="Node.js">
-                <Image src="images/nodejs-icon.svg" w="60px" h="60px" />
-              </Tooltip>
-            </Stack>
+          <Stack
+            direction="row"
+            pt={3}
+            spacing={3}
+            justify="center"
+            align="center"
+          >
+            {backTech.map(tech => (
+              <Tech image={tech.image} label={tech.label} />
+            ))}
           </Stack>
         </Stack>
         <Stack>
           <Text fontWeight="bold">Languages and Tools</Text>
-          <Stack direction="row" pt={3}>
+          <Stack direction="row" pt={3} justify="center" align="center">
             <Stack direction="row" mx="3rem" spacing={3}>
-              <Stack>
-                <Tooltip label="Javascript">
-                  <Image src="images/js.svg" w="60px" h="60px" />
-                </Tooltip>
-              </Stack>
-              <Stack>
-                <Tooltip label="Typescript">
-                  <Image src="images/typescript.svg" w="60px" h="60px" />
-                </Tooltip>
-              </Stack>
-              <Stack>
-                <Tooltip label="C/C++">
-                  <Image src="images/c.svg" w="60px" h="60px" />
-                </Tooltip>
-              </Stack>
-              <Stack direction="row">
-                <Stack>
-                  <Tooltip label="Git">
-                    <Image src="images/git-icon.svg" w="60px" h="60px" />
-                  </Tooltip>
-                </Stack>
-                <Stack>
-                  <Tooltip label="Github">
-                    <Image src="images/github-icon-1.svg" w="60px" h="60px" />
-                  </Tooltip>
-                </Stack>
-              </Stack>
+              {randTech.map(tech => (
+                <Tech image={tech.image} label={tech.label} />
+              ))}
             </Stack>
           </Stack>
         </Stack>

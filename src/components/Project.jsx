@@ -40,6 +40,7 @@ const Project = ({ data }) => {
         borderTopRadius="2xl"
         onMouseEnter={handleHover}
         onMouseLeave={handleHover}
+        alt={data.title}
       />
       <VStack>
         <Text fontWeight="bold" fontSize="xl">

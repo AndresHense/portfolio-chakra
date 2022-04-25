@@ -11,7 +11,9 @@ const Header = () => {
       px="3rem"
       py="1rem"
     >
-      <Text as="h1">Andres Hense</Text>
+      <Text as="h1" fontWeight="bold">
+        Andres Hense
+      </Text>
       <Stack direction="row" spacing={8} alignItems="center">
         <Button colorScheme="teal" as="a" href="CV-Hense.pdf" target="_blank">
           Download CV

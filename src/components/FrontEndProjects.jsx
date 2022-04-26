@@ -44,7 +44,7 @@ const FrontEndProjects = () => {
             <Button
               colorScheme="blue"
               size="lg"
-              mt={4}
+              mt={{ base: -3, md: 1, lg: 4 }}
               onClick={expandProjects}
             >
               See more

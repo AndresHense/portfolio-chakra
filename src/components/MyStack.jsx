@@ -26,7 +26,7 @@ const MyStack = () => {
             justify="center"
           >
             {frontTech.map(tech => (
-              <Tech image={tech.image} label={tech.label} />
+              <Tech image={tech.image} label={tech.label} key={tech.label} />
             ))}
           </Stack>
         </Stack>
@@ -41,7 +41,7 @@ const MyStack = () => {
             align="center"
           >
             {backTech.map(tech => (
-              <Tech image={tech.image} label={tech.label} />
+              <Tech image={tech.image} label={tech.label} key={tech.label} />
             ))}
           </Stack>
         </Stack>
@@ -50,7 +50,7 @@ const MyStack = () => {
           <Stack direction="row" pt={3} justify="center" align="center">
             <Stack direction="row" mx="3rem" spacing={3}>
               {randTech.map(tech => (
-                <Tech image={tech.image} label={tech.label} />
+                <Tech image={tech.image} label={tech.label} key={tech.label} />
               ))}
             </Stack>
           </Stack>

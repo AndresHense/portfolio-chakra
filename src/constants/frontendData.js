@@ -17,7 +17,7 @@ const projects = [
   },
   {
     image: 'images/landing.png',
-    gif: 'videos/landing.gif',
+    gif: 'images/landing.png',
     github: 'https://github.com/AndresHense/intro-section-with-dropdown-nav',
     deploy: 'https://kaleidoscopic-travesseiro-9833ff.netlify.app/',
     tecnologies: ['React', 'Chakra UI'],
@@ -31,6 +31,14 @@ const projects = [
     deploy: 'https://ornate-douhua-1799ea.netlify.app/',
     tecnologies: ['React', 'Chakra UI'],
     title: 'Rating Component',
+  },
+  {
+    image: 'images/clipboard.png',
+    gif: 'images/clipboard.png',
+    github: 'https://github.com/AndresHense/clipboard-landing-page',
+    deploy: 'https://lucky-gecko-53303d.netlify.app/',
+    tecnologies: ['React', 'Chakra UI'],
+    title: 'Clipboard Landing Page',
   },
 ];
 

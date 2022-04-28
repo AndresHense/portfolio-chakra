@@ -40,6 +40,14 @@ const projects = [
     tecnologies: ['React', 'Chakra UI'],
     title: 'Clipboard Landing Page',
   },
+  {
+    image: 'images/tracking.png',
+    gif: 'images/tracking.png',
+    github: 'https://github.com/AndresHense/tracking-landing-page',
+    deploy: 'https://tracking-landing-page.vercel.app/',
+    tecnologies: ['React', 'Chakra UI'],
+    title: 'Project Tracking Landing Page',
+  },
 ];
 
 export default projects;

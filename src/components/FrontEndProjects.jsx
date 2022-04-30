@@ -47,7 +47,8 @@ const FrontEndProjects = () => {
               mt={{ base: -3, md: 1, lg: 4 }}
               onClick={expandProjects}
             >
-              See more
+              See more {Math.ceil(numProjects / 4)}/
+              {Math.ceil(projects.length / 4)}
             </Button>
           )}
         </Box>

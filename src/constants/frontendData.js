@@ -48,6 +48,15 @@ const projects = [
     tecnologies: ['React', 'Chakra UI'],
     title: 'Project Tracking Landing Page',
   },
+  {
+    image: 'images/sunny.png',
+    gif: 'images/sunny.png',
+    github: 'https://github.com/AndresHense/sunnyside-landing-page',
+    deploy:
+      'https://sunnyside-landing-page-f9i1oy2oz-andreshense-gmailcom.vercel.app/',
+    tecnologies: ['React', 'Chakra UI', 'Typescript'],
+    title: 'Sunnyside Landing Page',
+  },
 ];
 
 export default projects;

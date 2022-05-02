@@ -65,11 +65,16 @@ const AboutMe = ({ isEnglish }) => {
         <Text align="start" fontFamily="mono">
           {isEnglish
             ? `I started studying web development as autodidact in 2020 and now
-             I'm a 3rd year Computer Science student at the university of Buenos Aires
-              who is currently looking for job opportunities while honing his skills.`
+             I'm a 3rd year Computer Science student at the university of Buenos Aires.
+              `
             : `Comencé a estudiar desarrollo web de forma autodidacta en el año 2020,
             actualmente curso el 3er año en la carrera Ciencias de la Computación
             de la UBA mientras busco oportunidades laborales y mejoro mis skills.`}
+        </Text>
+        <Text align="start" fontFamily="mono">
+          {isEnglish
+            ? `I'm currently looking for job opportunities and improving my skills.`
+            : ``}
         </Text>
       </VStack>
     </Stack>

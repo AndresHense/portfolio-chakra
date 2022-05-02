@@ -3,11 +3,11 @@ import React from 'react';
 import Tech from './Tech';
 import { frontTech, randTech, backTech } from '../constants/technologiesData';
 
-const MyStack = () => {
+const MyStack = ({ isEnglish }) => {
   return (
     <Stack mt={{ base: 4, lg: 12 }}>
       <Heading fontSize={{ base: 'xl', md: '2xl', lg: '4xl' }}>
-        Tecnologias que manejo:
+        {isEnglish ? 'Technologies that I use:' : 'Tecnologias que manejo:'}
       </Heading>
       <Stack
         direction={{ base: 'column', md: 'column', lg: 'row' }}
@@ -46,7 +46,9 @@ const MyStack = () => {
           </Stack>
         </Stack>
         <Stack>
-          <Text fontWeight="bold">Languages and Tools</Text>
+          <Text fontWeight="bold">
+            {isEnglish ? 'Languages and Tools' : 'Lenguajes y herramientas'}
+          </Text>
           <Stack direction="row" pt={3} justify="center" align="center">
             <Stack direction="row" mx="3rem" spacing={3}>
               {randTech.map(tech => (

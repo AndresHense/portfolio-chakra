@@ -8,6 +8,14 @@ const projects = [
     title: 'Guess the Pokemon',
   },
   {
+    image: 'images/meli.png',
+    gif: 'images/meli.png',
+    github: 'https://github.com/AndresHense/mercadolibre-details-challenge',
+    deploy: 'https://mercadolibre-details-clone.vercel.app/',
+    tecnologies: ['React', 'Chakra UI', 'Typescript'],
+    title: 'MeLi Product Page Clone',
+  },
+  {
     image: 'images/advice.png',
     gif: 'videos/advice.gif',
     github: 'https://github.com/AndresHense/advice-generator-app',

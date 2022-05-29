@@ -16,6 +16,14 @@ const projects = [
     title: 'MeLi Product Page Clone',
   },
   {
+    image: 'images/aerolab.png',
+    gif: 'images/aerolab.png',
+    github: 'https://github.com/AndresHense/aerolab-challenge',
+    deploy: 'https://aerolab-challenge-opal.vercel.app/',
+    tecnologies: ['React', 'Chakra UI', 'Typescript'],
+    title: 'Aerolab E-Commerce challenge',
+  },
+  {
     image: 'images/advice.png',
     gif: 'videos/advice.gif',
     github: 'https://github.com/AndresHense/advice-generator-app',

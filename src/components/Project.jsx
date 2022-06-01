@@ -1,10 +1,19 @@
-import { Button, HStack, Image, Stack, Text, VStack } from '@chakra-ui/react';
+import {
+  Button,
+  HStack,
+  Image,
+  Skeleton,
+  Stack,
+  Text,
+  VStack,
+} from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import Tecnologies from './Tecnologies';
 
 const Project = ({ data }) => {
   const [projectImage, setProjectImage] = useState(data.image);
   const [isGif, setIsGif] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (isGif) {
@@ -33,15 +42,21 @@ const Project = ({ data }) => {
       px={0}
       boxShadow="0 0 3px gray"
     >
-      <Image
-        width="400px"
-        src={projectImage}
-        height="250px"
-        borderTopRadius="2xl"
-        onMouseEnter={handleHover}
-        onMouseLeave={handleHover}
-        alt={data.title}
-      />
+      <Skeleton isLoaded={!loading}>
+        <Image
+          width="400px"
+          src={projectImage}
+          height="250px"
+          borderTopRadius="2xl"
+          onMouseEnter={handleHover}
+          onMouseLeave={handleHover}
+          alt={data.title}
+          onLoad={() => {
+            console.log('hey');
+            setLoading(false);
+          }}
+        />
+      </Skeleton>
       <VStack>
         <Text fontWeight="bold" fontSize="xl">
           {data.title}

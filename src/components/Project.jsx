@@ -52,7 +52,6 @@ const Project = ({ data }) => {
           onMouseLeave={handleHover}
           alt={data.title}
           onLoad={() => {
-            console.log('hey');
             setLoading(false);
           }}
         />

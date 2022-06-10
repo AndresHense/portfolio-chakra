@@ -24,6 +24,14 @@ const projects = [
     title: 'Aerolab E-Commerce challenge',
   },
   {
+    image: 'images/huddle-landing-curve.png',
+    gif: 'images/huddle-landing-curve.png',
+    github: 'https://github.com/AndresHense/huddle-landing-page-curved',
+    deploy: 'https://huddle-landing-page-curved-murex.vercel.app/',
+    tecnologies: ['React', 'Chakra UI', 'Typescript', 'Framer Motion'],
+    title: 'Huddle landing page curves',
+  },
+  {
     image: 'images/advice.png',
     gif: 'videos/advice.gif',
     github: 'https://github.com/AndresHense/advice-generator-app',
@@ -72,6 +80,14 @@ const projects = [
       'https://sunnyside-landing-page-f9i1oy2oz-andreshense-gmailcom.vercel.app/',
     tecnologies: ['React', 'Chakra UI', 'Typescript'],
     title: 'Sunnyside Landing Page',
+  },
+  {
+    image: 'images/chart-component.png',
+    gif: 'images/chart-component.png',
+    github: 'https://github.com/AndresHense/expenses-chart-component',
+    deploy: 'https://expenses-chart-component-pi.vercel.app/',
+    tecnologies: ['React', 'Material UI', 'Typescript'],
+    title: 'Chart Component',
   },
 ];
 

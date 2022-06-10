@@ -11,6 +11,9 @@ const badgeType = {
   'Vainilla JS': 'red',
   Content: 'red',
   Typescript: 'cyan',
+  'Framer Motion': 'red',
+  'Material UI': 'pink',
+  'Chakra UI': 'teal',
 };
 
 const Tecnologies = ({ data }) => {

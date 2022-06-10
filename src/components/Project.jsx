@@ -47,6 +47,7 @@ const Project = ({ data }) => {
           width="400px"
           src={projectImage}
           height="250px"
+          objectFit="cover"
           borderTopRadius="2xl"
           onMouseEnter={handleHover}
           onMouseLeave={handleHover}
